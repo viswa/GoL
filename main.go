@@ -7,6 +7,7 @@ import (
 
 	"github.com/faiface/pixel"
 	"github.com/faiface/pixel/pixelgl"
+	"golang.org/x/image/colornames"
 )
 
 const (
@@ -28,6 +29,7 @@ func run() {
 	}
 
 	for !win.Closed() {
+		win.Clear(colornames.White)
 		win.Update()
 	}
 }

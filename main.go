@@ -10,15 +10,15 @@ import (
 )
 
 const (
-	WINDOW_WIDTH  = 640
-	WINDOW_HEIGHT = 480
+	WindowWidth  = 640
+	WindowHeight = 480
 )
 
 // run is the implicit entry point to the program
 func run() {
 	cfg := pixelgl.WindowConfig{
 		Title:  "Game of Life",
-		Bounds: pixel.R(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT),
+		Bounds: pixel.R(0, 0, WindowWidth, WindowHeight),
 		VSync:  true,
 	}
 	win, err := pixelgl.NewWindow(cfg)

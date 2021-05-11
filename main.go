@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/faiface/pixel"
+	"github.com/faiface/pixel/imdraw"
 	"github.com/faiface/pixel/pixelgl"
 	"golang.org/x/image/colornames"
 )
@@ -28,8 +29,13 @@ func run() {
 		os.Exit(1)
 	}
 
+	imd := imdraw.New(nil)
+
 	for !win.Closed() {
+		imd.Clear()
+
 		win.Clear(colornames.White)
+		imd.Draw(win)
 		win.Update()
 	}
 }

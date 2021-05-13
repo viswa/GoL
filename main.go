@@ -11,6 +11,7 @@ import (
 	"golang.org/x/image/colornames"
 )
 
+// Window Dimensions
 const (
 	WindowWidth  = 640
 	WindowHeight = 480

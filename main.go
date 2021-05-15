@@ -59,7 +59,7 @@ func run() {
 		imd.Draw(win)
 		win.Update()
 
-		time.Sleep(10*time.Millisecond)
+		time.Sleep(40*time.Millisecond)
 		universe.Step()
 	}
 }

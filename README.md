@@ -1,3 +1,4 @@
+# Gol
 ## A graphical implementation of Conway's Game of Life
 <p align="center">
     <img alt="Game of Life Output GIF" src="assets/output.gif">

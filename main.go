@@ -27,7 +27,7 @@ func drawUniverse(imd *imdraw.IMDraw, state *State) {
 		for j := 0; j < WindowHeight/LifeCellSize; j++ {
 			if state.Present.Alive(i, j) {
 				x1, y1 := float64(i*LifeCellSize), float64(j*LifeCellSize)
-				x2, y2 := x1 + LifeCellSize, y1 + LifeCellSize
+				x2, y2 := x1+LifeCellSize, y1+LifeCellSize
 				imd.Push(pixel.V(x1, y1), pixel.V(x2, y2))
 				imd.Rectangle(0)
 			}
@@ -59,7 +59,7 @@ func run() {
 		imd.Draw(win)
 		win.Update()
 
-		time.Sleep(40*time.Millisecond)
+		time.Sleep(40 * time.Millisecond)
 		universe.Step()
 	}
 }

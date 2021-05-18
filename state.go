@@ -13,7 +13,7 @@ type State struct {
 // NewState returns a new State with random initial values
 func NewState(w, h int) *State {
 	Present := NewUniverse(w, h)
-	for i := 0; i < (w * h / 4); i++ {
+	for i := 0; i < (w * h / 8); i++ {
 		Present.Set(rand.Intn(w), rand.Intn(h), true)
 	}
 	return &State{

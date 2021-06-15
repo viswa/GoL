@@ -17,6 +17,8 @@ The universe of the Game of Life is an infinite, two-dimensional grid of square 
 ## Implementation
 gol starts by randomly initializing a universe state, drawing and updating it every 40 milliseconds.
 
+Window creation and drawing is done through [pixel](https://github.com/faiface/pixel) library.
+
 ## Installation and Usage
 Install the latest version in `$GOBIN` or `$GOROOT/bin` by
 
